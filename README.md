@@ -1,11 +1,13 @@
 # Reggie
 
-[![Build Status](https://travis-ci.org/mbrevoort/node-reggie.png?branch=master)](https://travis-ci.org/mbrevoort/node-reggie)
-[![NPM version](https://badge.fury.io/js/reggie.png)](http://badge.fury.io/js/reggie)
+[{IMG}](https://travis-ci.org/talkingtab/node-reggie)
+[{IMG}](http://badge.fury.io/js/reggie)
 
 ## Overview
 
 Reggie is an experimental light weight alternative to a full blown npm registry.
+
+*Update*  This is a fork of the original [reggie](https://github.com/mbrevoort) written by mbrevoort which looks like it is not being maintained. This version works with node v0.12.3.
 
 ## Why?
 
@@ -151,18 +153,18 @@ like publish, search, show and download.
 There are two ways how to publish a module to a different registry.
 
 * The safest way is to edit your `package.json` file and add a following line:
-
-  ```json
-	"publishConfig": { "registry": "http://reggie-url/" }
-  ```
-
+      
+  		```json
+  	"publishConfig": { "registry": "http://reggie-url/" }
+  	```
+      
   This way the package will be always published to our private repository.
 
 * The alternative option is to specify the registry URL on command-line:
-
-  ```bash
-	$ npm --registry=http://reggie-url/ publish
-  ```
+      
+  		```bash
+  	$ npm --registry=http://reggie-url/ publish
+  	```
 
 #### Installing
 
@@ -192,7 +194,7 @@ before putting a lot of effort into a big pull request.
 
 1. Please squash your commits to a single commit
 
-2. Commit message in the  common 50/72 format. First line is 50 characters or less and summarizes the commit, then a blank line, and the emaining text should be wrapped at 72 characters and provide longer/additional information. Also note that we try to use past tense in commit messages.
+1. Commit message in the  common 50/72 format. First line is 50 characters or less and summarizes the commit, then a blank line, and the emaining text should be wrapped at 72 characters and provide longer/additional information. Also note that we try to use past tense in commit messages.
 
 Example:
 
