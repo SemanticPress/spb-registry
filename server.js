@@ -22,16 +22,16 @@ var defaults = {
     h: '0.0.0.0'
   },
   argv = optimist
-    .usage('Reggie wants to serve your packages!\nUsage: $0')
+    .usage('SPB Registry wants to serve your packages!\nUsage: $0')
     //.demand(['d'])
     .default(defaults)
     .alias('d', 'data')
     .alias('p', 'port')
     .alias('h', 'host')
     .alias('u', 'url')
-    .describe('d', 'Directory to store Reggie\'s data')
-    .describe('p', 'Reggie\'s a good listener. What port should I listen on?')
-    .describe('h', 'Which host should Reggie listen on?')
+    .describe('d', 'Directory to store SPB Registry\'s data')
+    .describe('p', 'SPB Registry\'s a good listener. What port should I listen on?')
+    .describe('h', 'Which host should SPB Registry listen on?')
     .describe('u', 'URL where `npm` can access registry (usually http://{hostname}:{port}/)')
     .argv;
 
@@ -76,7 +76,7 @@ var server = restify.createServer();
 server.use(restify.bodyParser());
 
 server.get('/', function (req, res) {
-  res.send('Reggie says hi')
+  res.send('SPB Registry says hi')
 });
 
 server.put('/package/:name/:version', function (req, res, next) {
@@ -328,7 +328,7 @@ server.pre(function (req, res, next) {
 /**/
 
 server.listen(argv.port, argv.host, function() {
-  console.log('Reggie listening at %s', server.url);
+  console.log('SPB Registry listening at %s', server.url);
   console.log('NPM registry URL:\n  %s\n', config.registryUrl);
 });
 

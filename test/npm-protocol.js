@@ -3,7 +3,7 @@ var expect = require('chai').expect;
 
 var helpers = require('./helpers.js');
 
-describe('reggie npm server', function() {
+describe('SPB Registry npm server', function() {
   this.timeout(5000);
   before(helpers.prepareSandbox);
   before(helpers.startReggieServer);

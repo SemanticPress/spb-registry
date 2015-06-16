@@ -9,10 +9,10 @@ var fs = require('fs')
   ;
 
 var argv = optimist
-    .usage('reggie publish             --> Publish current module (from module root)\n' +
-           'reggie info <package_name> --> Show JSON info about a particular package')
+    .usage('spb publish             --> Publish current module (from module root)\n' +
+           'spb info <package_name> --> Show JSON info about a particular package')
     .default({ u: 'http://127.0.0.1:8080'})
-    .describe('u', 'The base URL of the Reggie server (e.g. http://reggie:8080)')
+    .describe('u', 'The base URL of the SPB Registry server (e.g. http://spb:8080)')
     .alias('u', 'url')
     .demand(['u'])
     .argv;

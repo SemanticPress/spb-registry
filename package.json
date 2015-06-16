@@ -1,15 +1,15 @@
 {
-  "author": "Mike Brevoort <mike@brevoort.com>",
-  "name": "reggie",
-  "description": "An experimental light weight alternative to a full blown npm registry",
+  "author": "TZ Martin",
+  "name": "spb-registry",
+  "description": "An a registry for open badges, based on npm and node-reggie",
   "version": "0.2.1",
   "bin": {
-    "reggie": "./client.js",
-    "reggie-server": "./server.js"
+    "spb": "./client.js",
+    "spb-server": "./server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mbrevoort/node-reggie.git"
+    "url": "git://github.com/semanticpress/spb-registry.git"
   },
   "dependencies": {
     "async": "~0.1.22",
